@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book club</title>
+  </head>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 500px;
+      margin: auto;
+      color: whitesmoke;
+      text-align: center;
+    }
+    form {
+      border: 4px solid #ab642d;
+    }
+
+    img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 200%;
+      -webkit-filter: blur (4px);
+      filter: blur(4px);
+    }
+  </style>
+
+  <body>
+    <h2>
+      <strong>Učlanjenje u Bookclub Narode knjižnice i čitaonice Sisak</strong>
+    </h2>
+    <img
+      class="background"
+      src="https://upload.wikimedia.org/wikipedia/commons/1/13/Sisak%2C_z%C3%A1pad_slunce.jpg"
+    />
+    <form action method="post">
+      <label for="name">Ime</label><br />
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="surname">Prezime</label><br />
+      <input type="text" id="surname" name="surname" />
+      <br />
+      <label for="email">E-mail: </label><br />
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="name">Korisničko ime</label><br />
+      <input type="text" id="username" name="username" />
+      <br />
+      <label for="password">Vaša lozinka</label><br />
+      <input type="text" id="password" name="password" />
+      <br />
+      <label for="password-again">Ponovite Vašu lozinku</label><br />
+      <input type="password" id="password-again" name="password-again" />
+      <br />
+      <label for="name">Kontakt</label><br />
+      <input
+        type="tel"
+        id="telephone"
+        name="telephone"
+        placeholder="09x-xxx-xxxx"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      /><br /><br />
+      <fieldset>
+        <legend>
+          Jeste li učlanjeni u Narodnu knjižnicu i čitaonicu Sisak?
+        </legend>
+        <div>
+          <input type="radio" id="positive" name="drone" value="positive" />
+          <label for="positive">Da</label>
+        </div>
+        <div>
+          <input type="radio" id="negative" name="drone" value="negative" />
+          <label for="negative">Ne, ali ću se učlaniti!</label>
+        </div>
+      </fieldset>
+
+      <label for="checkbox">Označite sve za što ste zainteresirani:</label
+      ><br />
+      <input type="checkbox" id="Bookclub" name="Bookclub" value="Bookclub" />
+      <label for="Bookclub">Bookclub</label><br />
+      <input type="checkbox" id="kviz" name="kviz" value="kviz" />
+      <label for="kviz">Kviz</label><br />
+      <input type="checkbox" id="zamjena" name="zamjena" value="zamjena" />
+      <label for="zamjena">Zamjena knjiga</label><br />
+      <input type="text" name="nesto" id="nesto" value="Predloži nešto!" />
+      <br />
+      <p><strong>Koliko prosječno čitate knjiga mjesečno?</strong></p>
+      <label for="knjige">Odaberite količinu: </label>
+      <br />
+      <input type="range" id="knjige" name="knjige" min="0" max="10" /><br />
+      <input type="submit" />
+
+      <br /><br />
+      <label for="image">Postavite avatar:</label>
+      <input type="file" id="image" /><br />
+
+      <p>
+        Stvaranjem korisničkog računa pristajete na pridržavanje
+        <a href="#">Pravila korištenja Bookcluba</a>.
+      </p>
+
+      <input class="btn-style" type="submit" value="Registriraj se" /><br />
+      <div class="container signin">
+        <p>Već imate korisnički račun? <a href="#">Ulogirajte se</a>.</p>
+      </div>
+    </form>
+  </body>
+</html>
