@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Forme nastavak-->
+
+    <!--oznaka da se vraća na ovu istu stranicu je ##, method get-->
+
+    <!--textarea: možeš pisati određen broj redova i stupaca
+ono što se upiše unutra je value od text aree
+može se staviti početna vrijednost, neka rečenica
+cols je stupaca, tj slova, a rows su redovi-->
+
+    <form action="#" method="get">
+      <label for="post">Unesite sadržaj svog posta: </label><br />
+      <textarea name="post" rows="30" cols="100">Upišite svoj post: </textarea
+      ><br /><br />
+
+      <!--button element, click me
+    onclick je atribu
+    
+    koriste se ralzičiti ovi, iako je izlaz isti zato da se mogu razdovjiti razl botuni ako je potrebno
+-->
+
+      <button type="button" onclick="alert('Hello world')">Click me!</button>
+      <input type="button" onclick="alert('Hello World')" value="Click Me!" />
+
+      <!--fieldset povezuje sve u jednu funkcionalnu cjelinu
+    radi onaj obrub oko neke funkcionalne cjeline
+legend fieldsetu daje naslov
+grupiraju se različiti dijelovi u formi
+po mogućnosti submit treba biti izvan tog boxa
+legend najbolje staviti odmah ispod fieldseta-->
+
+      <!--datalist
+možemo odabrati ono pto želimo, krenemo tipkati pa nam ponudi
+do kraja, recimo za registraciju za države, napišeš cro i predloži ti
+croatia-->
+
+      <br /><br />
+      <label for="polaznici">Odaberite polaznika iz liste:</label><br />
+
+      <input list="polaznici" name="polaznik" />
+      <datalist id="polaznici">
+        <option value="Miscevic"></option>
+        <option value="Blazic"></option>
+        <option value="Validzic"></option>
+        <option value="Lenzovic"></option>
+        <option value="Bunjan"></option>
+      </datalist>
+      <br /><br />
+      <!--output
+    izbacuje rezultat računanja
+output mu je ime parametra i ubacuje se "for" gdje stavljaš one elemente nad kojima će
+output raditi matematičke operacije
+u samoj formi se moraju nadodati oninput gdje nadodajemo vrijednosti koje su nam potrebne
+x.value : value nam govori o vrijednosti x-a nakon operacije
+parseInt je metoda pomoću koje parsiramo integer, pomoću nje se očita vrijednost
+s pomoću te vrijednosti elementa, da se i text koji je možda takav
+prebaci, odnosno interpretira kao integer, tj broj-->
+
+      <!--ovo je primjer s W3 schools, range je slider-->
+      <form
+        action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+      >
+        0
+        <input type="range" id="a" name="a" value="50" />
+        100 +
+        <input type="number" id="b" name="b" value="50" />
+        =
+        <output name="x" for="a b"></output>
+        <br /><br />
+        <input type="submit" />
+      </form>
+      <br /><br />
+      <!--naš primjer-->
+      <form
+        action="#"
+        method="get"
+        oninput="bonus.value=parseInt(parseInt(placa.value)*0.2).toString() + 'kn' "
+      >
+        <label for="placa">Odaberite iznos godišnje plaće: </label>
+        <input
+          id="placa"
+          name="placa"
+          type="range"
+          min="100000"
+          max="1000000"
+          value="500000"
+        /><br />
+        <label for="bonus">Predviđeni bonus za potpisivanje ugovora</label>
+        <output name="bonus" for="placa">100000</output>
+      </form><br><br>
+
+<!--optgroup je podgrupa selecta
+imaš glavnu grupu pa sve što spada pod nju
+pa drugu glavnu grupu pa sve što spada pdo nju, ali odabireš jedno
+i optgroup se NE MOŽE birati, služi više vizualno
+
+npr švedski auti
+njemački auti
+-->
+
+<label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+    </form>
+  </body>
+</html>
