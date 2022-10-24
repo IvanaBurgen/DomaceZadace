@@ -1,0 +1,119 @@
+/*univerzalni selektor se koristi da 'ubije' sve ono što nam
+browser daje, npr margine i sve te gluposti
+mi ne želimo da se na različitim browserima
+ili uređajima drugačije prikazuje pa
+treba paziti*/
+
+/*box sizing: border box nam govori da izračun dimenzija elemenata
+se radi po načinu
+način izračuna širine i visine elementa je takav da se
+samo središnji sadržaj izračuna i to su dimenzije html
+elementa - to nije dobro
+mi dimenzije elemenata želimo računati do bordera tako
+da dimenzija elementa bude border + padding + sadržaj
+
+
+padding je nadopuna do bordera*/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*inline level elementu ne možeš zapovijedati s veličinom
+to je npr <b>
+display: inline block
+inline blocku možeš specificirati dimenzije - on inače uzme
+dimenzije kao inline, ali mu možeš specificirati koliko i treba
+*/
+
+body {
+  background-color: bisque;
+}
+
+/**vh je viewport height*/
+header {
+  height: 15vh;
+  background-color: aquamarine;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  height: 15vh;
+  background-color: aquamarine;
+}
+
+h1 {
+  color: brown;
+}
+
+h2 {
+  color: rgba(250, 4, 4, 0.5);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: purple;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+b {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+/*selektori atributa iz html koda*/
+
+[href] {
+  font-style: italic;
+}
+
+[href="#osimi"] {
+  font-size: 24px;
+}
+
+/* traži izdvojenu riječ u value */
+[hhh~="vodi"] {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* pocinje sa rjeci popracenom - */
+[class|="header"] {
+  background-color: yellow;
+}
+
+/* pocinje sa rjeci */
+[class^="header"] {
+  transform: rotateY(180deg);
+}
+
+[hhh$="dinama"] {
+  transform: rotatex(180deg);
+}
+
+[hhh*="iv-di"] {
+  font-weight: 900;
+}
+
+b[id$="ma"] {
+  color: blue;
+}
+
+section.plavi {
+  text-decoration: underline;
+}
