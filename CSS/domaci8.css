@@ -31,7 +31,7 @@ header li {
 header li a {
   text-decoration: none;
   color: radial-gradient(circle, #3c849a, #cd2bee);
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 header img {
