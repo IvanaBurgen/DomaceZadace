@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(https://static.thenounproject.com/png/2789769-200.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: scroll;
+}
+
+header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  background-color: aliceblue;
+}
+
+header li {
+  margin: 30px;
+}
+
+header li a {
+  text-decoration: none;
+  color: radial-gradient(circle, #3c849a, #cd2bee);
+  font-size: 1.5em;
+}
+
+header img {
+  height: 80px;
+}
+
+header * {
+  display: inline;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  height: 5vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  display: block;
+  width: 200px;
+  border: 3px solid aliceblue;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 1.5 em;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: #c01ee08e;
+  opacity: 0.99;
+}
+
+[id$="ma"] {
+  color: black;
+  padding: 5px;
+  margin-left: 8px;
+}
+
+[id="djelatnosti"] {
+  color: black;
+  padding: 5px;
+  margin-left: 8px;
+}
+
+[id*="kontakt"] {
+  color: black;
+  padding: 5px;
+  margin-left: 8px;
+}
+
+[class^="druga"] {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin-up: 10px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+input[type="text"] {
+  border: 3px solid #3c849a;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+input[type="email"] {
+  border: 3px solid #3c849a;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+textarea {
+  border: 3px solid #3c849a;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+button {
+  display: block;
+  width: 200px;
+  border: 3px solid aliceblue;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  text-decoration: none;
+  font-size: 1 em;
+  border-radius: 25px;
+  color: aliceblue;
+  background-color: #c01ee08e;
+}
+
+[class="multimedia"] {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
