@@ -31,11 +31,12 @@ header li {
 header li a {
   text-decoration: none;
   color: radial-gradient(circle, #3c849a, #cd2bee);
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 header img {
   height: 80px;
+  margin-left: 40px;
 }
 
 header * {
@@ -52,12 +53,10 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: left;
-  margin-left: 5px;
-  padding: 10px;
 }
 
 .hero {
-  width: 100vw;
+  width: 90w;
   height: 100vh;
 
   display: flex;
@@ -91,62 +90,104 @@ footer {
   margin-top: 50px;
   text-decoration: none;
   font-size: 1.5 em;
-  border-radius: 20px;
+  border-radius: 25px;
   color: aliceblue;
-  background-color: #c01ee08e;
   opacity: 0.99;
+
+  background-color: #c01ee08e;
+}
+
+.dropbtn {
+  background-color: aliceblue;
+  color: #3c849a;
+  padding: 16px;
+  font-size: 16px;
+  border: 3px solid aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header div {
+  height: 80px;
+  margin: 30px;
+}
+
+.dropdown-sadrzaj {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-sadrzaj a:hover {
+  background-color: #3c849a;
+  color: aliceblue;
+}
+.dropdown:hover .dropdown-sadrzaj {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #c01ee08e;
+  opacity: 0, 1;
+}
+
+.dropdown-sadrzaj a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 [id$="ma"] {
   color: black;
-  padding: 5px;
-  margin-left: 8px;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 [id="djelatnosti"] {
   color: black;
-  padding: 5px;
-  margin-left: 8px;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 [id*="kontakt"] {
   color: black;
-  padding: 5px;
-  margin-left: 8px;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 [class^="druga"] {
   color: white;
-  text-decoration: none;
-}
-
-p {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  text-align: justify;
 }
 
 form {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 10px;
 }
 
 input[type="text"] {
-  border: 3px solid #3c849a;
+  border: 1px solid #3c849a;
   border-radius: 4px;
   padding: 5px;
 }
 
 input[type="email"] {
-  border: 3px solid #3c849a;
+  border: 1px solid #3c849a;
   border-radius: 4px;
   padding: 5px;
 }
 
 textarea {
-  border: 3px solid #3c849a;
+  border: 1px solid #3c849a;
   border-radius: 4px;
   padding: 5px;
 }
@@ -170,11 +211,6 @@ button {
   background-color: #c01ee08e;
 }
 
-[class="multimedia"] {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
+p {
+  display: inline-block;
 }
