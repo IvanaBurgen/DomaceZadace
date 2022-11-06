@@ -1,0 +1,68 @@
+.relativno {
+  background-color: aquamarine;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+/*position:absolute se odnosi da prvog pretka
+koji nije statičan, nego je pomaknut*/
+
+.apsolutni1,
+.apsolutni2 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.apsolutni1 {
+  background-color: chocolate;
+}
+
+.apsolutni2 {
+  background-color: purple;
+}
+
+.fiksni {
+  background-color: bisque;
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+}
+
+.stiki {
+  background-color: orange;
+  position: Sticky;
+  bottom: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  flex-flow: column wrap;
+}
+
+.flex-container > div {
+  width: 100%;
+}
+
+.flex-container > div:first-of-type {
+  width: 50%;
+  background-color: bisque;
+}
+
+.inline-flex-container {
+  display: inline-flex;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.obojan {
+  width: 10%;
+  background-color: blue;
+}

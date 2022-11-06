@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 header li {
-  margin: 30px;
+  margin: 15px;
 }
 
 header li a {
@@ -35,7 +35,7 @@ header li a {
 }
 
 header img {
-  height: 80px;
+  height: 60px;
   margin-left: 40px;
 }
 
@@ -47,6 +47,18 @@ main {
   min-height: 70vh;
 }
 
+section > h2:hover {
+  display: inline-block;
+  color: white;
+  background-color: #3c849a;
+}
+
+section > p:hover {
+  color: #cd2bee;
+  border-style: solid;
+  border-color: #3c849a;
+}
+
 footer {
   height: 5vh;
   left: 0;
@@ -56,7 +68,7 @@ footer {
 }
 
 .hero {
-  width: 90w;
+  width: 100vw;
   height: 100vh;
 
   display: flex;
@@ -213,4 +225,20 @@ button {
 
 p {
   display: inline-block;
+}
+
+h2:hover:nth-child(2) {
+  background-color: bisque;
+}
+
+figure > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid cadetblue;
+}
+
+footer > img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
