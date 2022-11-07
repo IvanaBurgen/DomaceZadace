@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: pink;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  background-color: palevioletred;
+  margin: 20px;
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.clanak-lijevo {
+  flex-basis: 15%;
+  background-color: rgb(177, 133, 177);
+  padding: 10px;
+  order: 0;
+}
+
+.clanak-lijevo > h2 {
+  text-align: center;
+  padding: 6px;
+}
+
+.clanak-sredina {
+  flex-basis: 35%;
+  padding: 10px;
+  order: 1;
+  background-color: rgb(177, 133, 177);
+}
+
+.clanak-sredina > h2 {
+  text-align: center;
+  padding: 6px;
+}
+
+.clanak-desno {
+  flex-basis: 40%;
+  padding: 20px;
+  order: 2;
+  background-color: rgb(177, 133, 177);
+}
+
+.clanak-desno > h2 {
+  text-align: center;
+  padding: 6px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+footer {
+  display: flex;
+  flex-basis: 100%;
+  background-color: palevioletred;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+  height: 10vh;
+}
